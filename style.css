@@ -4,11 +4,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #000;
-    background: linear-gradient(135deg,#cecece, #ffffff, #c6c2c2);
+    background: linear-gradient(95deg,#cecece, #ffffff, #c6c2c2);
 }
 
 header{
-    background: linear-gradient(135deg,#e4416f,#e72c61,#d40053);
+    background: linear-gradient(135deg,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#cf0058,#a0146d,#642d88,#0655b4);
     color: #fff;
     padding: -15px;
     text-align: justify;
@@ -16,6 +16,26 @@ header{
 
 header.image{
      display: flex;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: .2s;
+}
+
+header nav.menu a:hover {
+    color: #575151;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+}
+header nav.menu ul li {
+    display: block;
+    margin: 0 40px;
 }
 
 h1{
@@ -142,3 +162,4 @@ section.bloco{
     background-color: #d40053;
     color: #ffdd00;
 }
+
