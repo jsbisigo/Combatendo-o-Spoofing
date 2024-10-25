@@ -8,27 +8,126 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    
+.paragrafo p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.paragrafo {
+    font-size: 26px;
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.image_ini img {
+    max-width: 480px;
+    border-radius: 10px;
+    margin-right: -260px;
+    margin-top: -20px;
+}
+
+.image_ini {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.rectangles-container {
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rectangle {
+    background: #071952;
+    color: white;
+    border-radius: 8px;
+    width: 387px;
+    height: 230px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.rectangle h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rectangle p {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+</style>
 <body>
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="./pagina_inicial.html">
-                    <img src="images/images.png" alt="Logo jaqueline sbisigo" class="img">
-                </a>
+                <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px;">SPOOFING:</p>
+                <p style="font-size: 20px;">Os perigos dos <br> ataques cibernéticos</p>
             </div>
 
             <nav class="menu">
                 <ul>
-                    <li><a href="./colaboradores.html">Colaboradores</a></li>
-                    <li><a href="./colaboradores.html">Colaboradores</a></li>
-                    <li><a href="./colaboradores.html">Colaboradores</a></li>
+                    <li><a href="./pagina_inicial.html" class="active">INÍCIO </a></li><br>
+                    <li><a href="./oque.html">O QUE È SPOOFING?</a></li><br>
+                    <li><a href="./resultados.html">RESULTADOS DA PEQUISA</a></li><br>
+                    <li><a href="./contato.html">QUEM SOMOS?</a></li><br>
                 </ul>
             </nav>
 
         </div>
     </header>
     <main>
-       <h1>**** ANÁLISE DE DADOS COLETADOS ****</h1>
+        <div class="paragrafo">
+       <p1>Spoofing é uma técnica cibertnética utilizada para falsificar a 
+        identidade de uma pessoas ou dispositivo, com o objetivo de enganar
+        sistemas ou usuários, fazendo-os acreditar que a comunicação
+        está vindo de uma fonte confiável. O termo deriva do verbo inglês
+        "to spoof", que significa "enganar" ou "falsificar". No contexto de segurança
+        digital, spoofing pode ocorrer em diversas formas, como falsificação de endereções
+        de IP, de emails, de websites, de chamada telefôniicas, entre outras formas.</p1>
+    </div>
+
+    <div class="image_ini">
+        <img src="images/img_ini.jpg" class="image_ini">
+    </div>
+
+    <div class="rectangles-container">
+        <div class="rectangle">
+            <h3>IP Spoofing</h3>
+            <p>Consiste em mascarar o endereço IP de origem, fazendo com que o sistema-alvo acredite que está se comunicando com um dispositivo legítimo, quando na verdade está interagindo com um atacante.</p>
+        </div>
+
+        <div class="rectangle">
+            <h3>Email Spoofing</h3>
+            <p>Nesse caso, o atacante altera o campo de remetente de um email para parecer que vem de uma fonte confiáve, com o intuito de enganar o destinatário para obter informações sensíveis.</p>
+        </div>
+
+        <div class="rectangle">
+            <h3>DNS Spoofing</h3>
+            <p>Também chamado de envenenamento de cache DNS, esse tipo de ataque redireciona o tráfego de um site legítimo para um site malicioso sem que o usuário perceba.</p>
+        </div>
+
+        <div class="rectangle">
+            <h3>ARP Spoofing</h3>
+            <p>Usando a falsificação de mensagens ARP em uma rede local, o invasor vincula seu endereço MAC a um endereço IP de outro dispositivo na rede, interceptando os dados.</p>
+        </div>
+
+        <div class="rectangle">
+            <h3>Caller ID Spoofing</h3>
+            <p>Envolve a falsificação de números de telefone, permitindo que os invasores pareçam estar ligando de um número confiável. É comum em golpes por telefone.</p>
+        </div>
+    </div>
     </main>
 </body>
 </html>
