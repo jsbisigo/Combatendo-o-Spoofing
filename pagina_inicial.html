@@ -9,64 +9,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    
-.paragrafo p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+    .paragrafo2 p {
+        font-size: 27px;
+        line-height: 1.9;
+        margin-left: -5px;
+        margin-right: -5px;
+        flex: 1;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: -10px;
+    }
+      
+    .txt{
+        font-size: 27px;
+        text-align: center;
+        width: 201%; 
+        margin-top: -20px;
+        box-sizing: border-box; 
+        line-height: 1.5;
+    }
 
-.paragrafo {
-    font-size: 26px;
-    flex: 1;
-    margin-right: 20px;
-    text-align: justify;
-    margin-bottom: 50px;
-}
+    .image img{
+        max-width: 600px;
+        height: 764px;
+        border-radius: 8px;
+        margin-top: -10px;
+        margin-right: -18px;
+        margin-left:-40px ;
+    }
 
-.image_ini img {
-    max-width: 480px;
-    border-radius: 10px;
-    margin-right: -260px;
-    margin-top: -20px;
-}
-
-.image_ini {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.rectangles-container {
-    grid-column: 1 / -1; 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.rectangle {
-    background: #071952;
-    color: white;
-    border-radius: 8px;
-    width: 387px;
-    height: 230px; 
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.rectangle h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.rectangle p {
-    font-size: 16px;
-    line-height: 1.4;
-    text-align: justify;
-}
-
+    .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    } 
+    .bt_inicio{
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / -1; 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: -110px;
+        margin-left: 720px;
+    }
+    .bt_inicio a.botao {
+        margin-top: -4%;
+        height: 80px;
+        width: 600px;
+        font-size: 35px; 
+        font-weight: bold; 
+        color: #FFFFFF;
+        background: #C81235;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 80px;     
+        transition: background-color 0.5s, color 0.3s;
+    }
+    .bt_inicio a.botao:hover{
+        background-color:#C81235;
+        color: #000000;
+    }
 </style>
 <body>
     <header>
@@ -88,46 +93,33 @@
         </div>
     </header>
     <main>
-        <div class="paragrafo">
-       <p1>Spoofing é uma técnica cibertnética utilizada para falsificar a 
-        identidade de uma pessoas ou dispositivo, com o objetivo de enganar
-        sistemas ou usuários, fazendo-os acreditar que a comunicação
-        está vindo de uma fonte confiável. O termo deriva do verbo inglês
-        "to spoof", que significa "enganar" ou "falsificar". No contexto de segurança
-        digital, spoofing pode ocorrer em diversas formas, como falsificação de endereções
-        de IP, de emails, de websites, de chamada telefôniicas, entre outras formas.</p1>
+        <div class="txt">
+       <p>Spoofing é uma técnica ou prática cibernética que envolve a falsificação de informações,
+         identidades ou dados com o objetivo de enganar pessoas, sistemas de segurança, ou sistemas
+        de autenticação.  Durante a realização do projeto, realizamos uma pesquisa nas imediações da 
+        Universidade de Pato Branco (UNIDEP), para determinar a relação de seus alunos com 
+        a segurança na internet.</p>
     </div>
+    <br>
 
-    <div class="image_ini">
-        <img src="images/img_ini.jpg" class="image_ini">
-    </div>
+    <div class="image">
+        <img src="images/banner.jpg" class="image"></div>
 
-    <div class="rectangles-container">
-        <div class="rectangle">
-            <h3>IP Spoofing</h3>
-            <p>Consiste em mascarar o endereço IP de origem, fazendo com que o sistema-alvo acredite que está se comunicando com um dispositivo legítimo, quando na verdade está interagindo com um atacante.</p>
+        <div class="paragrafo2">
+        <p>Inspirados pela história de um dos nossos integrantes,
+            que sofreu um golpe e levou um prejuízo de quase 7 mil
+            reais ao cair em um golpe comum de spoofing, o site
+            falso, resolvemos criar uma pesquisa com o objetivo
+            de conscientizar os demais sobre os perigos que a
+            internet pode oferecer.</p>
+
+            <p>Baseados nisso, coletamos e analisamos esses dados,
+                separando-os em categorias com o fim de descobrir qual 
+                o perfil de pessoa mais suscetível a cair em golpes virtuais.</p>
+            </div>
+            <div class="bt_inicio">
+            <a href="/oque.html"  class="botao" >CLIQUE AQUI PARA SABER MAIS</a>
         </div>
-
-        <div class="rectangle">
-            <h3>Email Spoofing</h3>
-            <p>Nesse caso, o atacante altera o campo de remetente de um email para parecer que vem de uma fonte confiáve, com o intuito de enganar o destinatário para obter informações sensíveis.</p>
-        </div>
-
-        <div class="rectangle">
-            <h3>DNS Spoofing</h3>
-            <p>Também chamado de envenenamento de cache DNS, esse tipo de ataque redireciona o tráfego de um site legítimo para um site malicioso sem que o usuário perceba.</p>
-        </div>
-
-        <div class="rectangle">
-            <h3>ARP Spoofing</h3>
-            <p>Usando a falsificação de mensagens ARP em uma rede local, o invasor vincula seu endereço MAC a um endereço IP de outro dispositivo na rede, interceptando os dados.</p>
-        </div>
-
-        <div class="rectangle">
-            <h3>Caller ID Spoofing</h3>
-            <p>Envolve a falsificação de números de telefone, permitindo que os invasores pareçam estar ligando de um número confiável. É comum em golpes por telefone.</p>
-        </div>
-    </div>
     </main>
 </body>
 </html>
