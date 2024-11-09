@@ -1,67 +1,80 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body, html{
     margin: 0px;
     padding: 0px;
+    height: 180%;
     box-sizing: border-box;
-    color: #071952;
-    background: #c7d2ff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('/images/hacker3.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex; 
 }
 
-.menu ul li {
-    margin-bottom: 10px;
-}
-
-.menu a {
+.menu ul li a {
+    color: #0B2F9F;
     text-decoration: none;
+}
+
+.menu ul li a.active {
+    font-weight: bold;
+}
+
+header {
     color: #fff;
-}
-
-header{
-    background: #091a52;
-    color: #97FEED;
     padding: 0.1rem;
-    text-align:center;
-    font-weight:500;
-}
-
-header>.interface{
-    justify-content:space-between;
-    align-items: center;
+    text-align: center;
+    background-color: black; 
     display: flex;
-    margin-left: 150px;
-   
+    justify-content: space-between;
+    align-items: center;
 }
 
-header a {
-    color: #97FEED;
-    font-size: 18px;
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+header a { 
+    color: #0B2F9F;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
+header nav.menu {
+    display: flex;
+}
+
+header nav.menu a {
+    color: #fff;
+    font-size: 14.5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
 header nav.menu a:hover {
-    color: #4169ee;
+    color: #35A29F;
     transform: scale(1.05);
 }
 
-header nav ul {
-    list-style: none;
+header nav.menu a.active {
+    color: #35A29F;
+    font-weight: bold;
 }
+
 header nav.menu ul li {
     display: inline-block;
     margin: 0 40px;
 }
-header nav.menu a.active {
-    color: #fff;
-    font-weight: bold;
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -69,5 +82,20 @@ main {
     align-items: start;
     padding: 50px;
 }
-
-
+figure {
+    margin: 0;
+    padding: 0;
+    }
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+    #galeria img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .img-pequena {
+        margin-left: 15px;
+        width: 105px; 
+        height: auto; 
+    }                                            

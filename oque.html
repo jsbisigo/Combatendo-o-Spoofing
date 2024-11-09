@@ -9,63 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-.paragrafo p {
-    font-size: 18px;
+
+.paragrafo, .paragrafo2, .txt {
+    font-size: 20px;
     line-height: 1.6;
-}
-
-.paragrafo {
-    font-size: 26px;
-    flex: 1;
-    margin-right: 20px;
     text-align: justify;
-    margin-bottom: 50px;
-    margin-top: 40px;
-}
-.paragrafo2 p {
-    font-size: 18px;
-    line-height: 1.6;
+    width: 190%;
+    margin-left: 45px;
+    margin-right: 25px;
 }
 
-.paragrafo2 {
-    font-size: 26px;
-    flex: 1;
-    margin-right: 10px;
-    text-align: justify;
-    margin-bottom: 50px;
-    margin-top: 40px;
-}
-
-.image img{
-    max-width: 580px;
-    height: 385px;
-    border-radius: 8px;
-    margin-top: 30px;
-    margin-right: 60px;
-    margin-left:-40px ;
-}
-
-.image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-} 
-
-.image_ini img {
-    max-width: 580px;
-    height: 385px;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.image_ini {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-} 
 .pag2{
-    background: #1B9AAA;
+    background: #35A29F;
     color: #fff;
     border-radius: 10px;
     font-size: 25px;
@@ -86,14 +41,6 @@ h2{
     margin-top: 15px;
 }
 
-.txt{
-    font-size: 25px;
-    text-align: justify;
-    width: 201%; 
-    margin-top: -44px;
-    box-sizing: border-box; 
-}
-
 .rectangles-container {
     grid-column: 1 / -1; 
     display: flex;
@@ -102,15 +49,21 @@ h2{
     gap: 20px;
 }
 
-.rectangle {
-    background: #071952;
+.rectangle, .rectangle-casos {
     color: white;
+    border: 4px solid #35A29F; 
     border-radius: 8px;
     width: 387px;
-    height: 230px; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: none;
+    box-shadow: none;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.rectangle:hover, .rectangle-casos:hover {
+    transform: scale(1.05); 
+    color: #ffffff; 
 }
 
 .rectangle h3 {
@@ -124,28 +77,43 @@ h2{
     line-height: 1.4;
     text-align: justify;
 }
+.rectangle-casos p{
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.rectangle-casos {
+    width: 180%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid #35A29F;
+    color: white;
+    margin-left: 50px;
+}
+
 </style>
 <body>
-    <body>
         <header>
             <div class="interface">
-                <div class="logo">
-                    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px;">SPOOFING:</p>
-                    <p style="font-size: 20px;">Os perigos dos <br> ataques cibernéticos</p>
-                </div>
+                <img src="/images/image.png" class="img-pequena">
+            </div>
     
                 <nav class="menu">
                     <ul>
                         <li><a href="./pagina_inicial.html" >INÍCIO </a></li><br>
-                        <li><a href="./oque.html"class="active">O QUE È SPOOFING?</a></li><br>
+                        <li><a href="./oque.html"class="active">O QUE É SPOOFING?</a></li><br>
                         <li><a href="./resultados.html">RESULTADOS DA PEQUISA</a></li><br>
-                        <li><a href="./contato.html">QUEM SOMOS?</a></li><br>
+                        <li><a href="./quemsomos.html">QUEM SOMOS?</a></li><br>
                     </ul>
                 </nav>
     
             </div>
         </header>
     <main>
+        <div class="pag2">
+            <h2>O QUE É O SPOOFING?</h2>
+        </div>
         <div class="paragrafo">
             <p1>Spoofing é uma técnica cibertnética utilizada para falsificar a 
              identidade de uma pessoas ou dispositivo, com o objetivo de enganar
@@ -156,9 +124,7 @@ h2{
              de IP, de emails, de websites, de chamada telefôniicas, entre outras formas.</p1>
          </div>
      
-         <div class="image_ini">
-             <img src="images/img_ini.jpg" class="image_ini">
-         </div>
+    
      
          <div class="rectangles-container">
              <div class="rectangle">
@@ -190,26 +156,11 @@ h2{
             <h2>CASOS DE SPOOFING NO BRASIL</h2>
         </div>
 
-        <div class="paragrafo">
-            <p1>No Brasil, o spoofing ganhou notoriedade, especialmente após a revelação de um ataque cibernético em 2019, que ficou amplamente conhecido como o "Caso Vaza Jato". Nesse episódio, hackers utilizaram técnicas de spoofing para interceptar e acessar mensagens de autoridades do governo brasileiro e membros da operação Lava Jato, incluindo o então juiz Sérgio Moro e procuradores do Ministério Público Federal.</p1>
-         </div>
-     
-         <div class="image_ini">
-             <img src="images/img_pag2.png" class="image_ini">
-         </div>
-
-         <div class="image">
-            <img src="images/img_pag3.png" class="image">
-         </div>
-
-         <div class="paragrafo2">
-            <p1>Os invasores mascararam seus números de telefone para se passar por contatos confiáveis, conseguindo assim obter acesso a comunicações privadas via o aplicativo Telegram. Esse caso gerou grande repercussão nacional, levantando questões sobre a segurança digital das comunicações governamentais e privadas no Brasil. Além disso, trouxe à tona discussões sobre os limites da privacidade, ética no uso de informações vazadas e o impacto do cibercrime no cenário político do país.</p1>
-         </div>
-     
-         <div class="txt">
+        <div class="rectangle-casos">
+            <p>No Brasil, o spoofing ganhou notoriedade, especialmente após a revelação de um ataque cibernético em 2019, que ficou amplamente conhecido como o "Caso Vaza Jato". Nesse episódio, hackers utilizaram técnicas de spoofing para interceptar e acessar mensagens de autoridades do governo brasileiro e membros da operação Lava Jato, incluindo o então juiz Sérgio Moro e procuradores do Ministério Público Federal.</p>
+            <p>Os invasores mascararam seus números de telefone para se passar por contatos confiáveis, conseguindo assim obter acesso a comunicações privadas via o aplicativo Telegram. Esse caso gerou grande repercussão nacional, levantando questões sobre a segurança digital das comunicações governamentais e privadas no Brasil. Além disso, trouxe à tona discussões sobre os limites da privacidade, ética no uso de informações vazadas e o impacto do cibercrime no cenário político do país.</p>
             <p>Outro caso notável de spoofing ocorreu em 2020, quando o sistema da empresa de telefonia Oi foi alvo de um ataque de caller ID spoofing, resultando em tentativas de golpe financeiro. Os criminosos faziam ligações se passando por atendentes da operadora, solicitando informações bancárias e dados pessoais dos clientes. Esse incidente evidenciou a necessidade de reforçar a segurança em sistemas de telecomunicações.</p>
          </div>
-
     </main>
 </body>
 </html>
