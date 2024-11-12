@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+    
     main {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@
         border-radius: 8px;
         margin-top: 250px;
         margin-left: 250px;
-    }
+    }   
 
     main p {
         font-size: 27px;
@@ -26,75 +27,89 @@
         color: #fff;
     }
 
+    .overlay {
+        border: 3px solid #35A29F;
+        background-color: rgba(0, 0, 0, 0.407);
+        padding: 40px;
+        height: 400px;
+        max-width: 900px;
+        text-align: center;
+        color: #cedff1;
+        border-radius: 10px;
+        margin-top: -170px;
+    }
+
+    .banner h1 {
+        background: #35A29F;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .banner p {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+
+    }
     .button {
         display: inline-block;
-        padding: 12px 24px;
-        font-size: 1.2em;
+        padding: 9px 15px;
+        font-size: 1.02em;
         font-weight: 500;
         color: #000;
         background-color: #fff;
         text-decoration: none;
         border-radius: 8px;
         transition: background-color 0.3s, transform 0.3s;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        animation: floatButton 3s ease-in-out infinite;
     }
 
     .button:hover {
-        background-color: #35A29F;
+        background-color: #1b99aa9a;
+        color: #fff;
         transform: scale(1.1);
     }
 
-    .button.move {
-        animation: moveButton 5s infinite;
+    @keyframes floatButton {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
     }
 
-    @keyframes moveButton {
-        0% { transform: translate(0, 0); }
-        25% { transform: translate(10px, -10px); }
-        50% { transform: translate(-10px, 10px); }
-        75% { transform: translate(10px, 10px); }
-        100% { transform: translate(-10px, -10px); }
-    }
 
-    .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        align-items: center;
+    .pagination {
+        display: flex;
         justify-content: center;
-        z-index: 1000;
+        margin-top: -45px;
+        margin-right: 25px;
     }
 
-    .modal-content {
-        background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
-        border: 2px solid #0e9083;
-        color: #ffffff;
-        padding: 20px;
-        max-width: 500px;
-        width: 90%;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .close-button, .confirm-button {
-        background-color: #fff;
-        color: #000;
-        padding: 10px 25px;
-        font-size: 18px;
-        border: none;
+    .pagination a {
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
         border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 10px;
+        transition: background-color 0.3s, color 0.3s;
     }
 
-    .close-button:hover, .confirm-button:hover {
-        background-color: #35A29F;
+    .pagination a:hover {
+        background-color: #1b99aa9a;
+        color: #FFFFFF;
     }
+
+    .pagination a.active {
+        background-color: #1b99aa9a;
+        color: #000;
+    }
+
 </style>
 <body>
     <header>
@@ -114,53 +129,34 @@
         </div>
     </header>
     <main>
-        <p>Spoofing é uma técnica cibernética que envolve a falsificação de informações com o objetivo de enganar e realizar fraudes. Evite clicar em links desconhecidos e nunca forneça dados pessoais em sites não confiáveis.</p>
-        <a href="#" class="button move" id="mainButton" onclick="openModal(event)">Saiba Mais</a>
-    </main>
-
-    <div class="modal" id="spoofingModal">
-        <div class="modal-content">
-            <h2>Atenção!</h2>
-            <p>Evite clicar em links desconhecidos! Spoofing é uma técnica que envolve a falsificação de informações para enganar pessoas e realizar fraudes. Seja cuidadoso ao clicar em links e nunca forneça dados pessoais em sites não confiáveis.</p>
-            <button class="close-button" onclick="showConfirmation()">Entendido</button>
-        </div>
+        <section class="banner">
+            <div class="overlay">
+                <h1>Spoofing: Os perigos dos ataques cibernéticos</h1>
+                <p>Spoofing é uma técnica ou prática cibernética que envolve a falsificação de informações, identidades ou dados com o objetivo de enganar pessoas, sistemas de segurança ou sistemas de autenticação. Durante a realização do projeto, realizamos uma pesquisa para determinar a relação dos alunos da Universidade de Pato Branco (UNIDEP) com a segurança na internet.</p>
+                <p>Inspirados pela história de um dos nossos integrantes que sofreu um golpe e perdeu quase 7 mil reais, criamos uma pesquisa para conscientizar os demais sobre os perigos da internet. Coletamos e analisamos esses dados, categorizando perfis mais suscetíveis a golpes virtuais.</p>
+                <br>
+                <a href="/oque.html" class="button move" >Saiba Mais</a>
+            </div>
+        </section>
+  
+<br>
+    <div class="pagination">
+        <a href="quemsomos.html">&lt;</a>
+        <a href="./pagina_inicial.html" class="active">1</a>
+        <a href="./oque.html">2</a>
+        <a href="./resultados.html">3</a>
+        <a href="./quemsomos.html">4</a>
+        <a href="./oque.html">&gt;</a>
     </div>
 
-    <div class="modal" id="confirmationModal">
-        <div class="modal-content">
-            <h2>Gostaria de saber mais?</h2>
-            <p>Deseja acessar mais informações sobre spoofing e aprender a se proteger?</p>
-            <button class="confirm-button" onclick="redirectToSpoofing()">Sim, quero saber mais</button>
-            <button class="close-button" onclick="closeConfirmation()">Não, obrigado</button>
-        </div>
-    </div>
-
-    <script>
-        function openModal(event) {
-            event.preventDefault();
-            const modal = document.getElementById('spoofingModal');
-            modal.style.display = 'flex';
-        }
-
-        function showConfirmation() {
-            closeModal();
-            const confirmationModal = document.getElementById('confirmationModal');
-            confirmationModal.style.display = 'flex';
-        }
-
-        function redirectToSpoofing() {
-            window.location.href = "./oque.html";
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('spoofingModal');
-            modal.style.display = 'none';
-        }
-
-        function closeConfirmation() {
-            const confirmationModal = document.getElementById('confirmationModal');
-            confirmationModal.style.display = 'none';
-        }
+</main>
+  <script>
+    function openModal(event) {
+        event.preventDefault();
+        const modal = document.getElementById('spoofingModal');
+        modal.style.display = 'flex';
+    }
     </script>
-</body>
+
+  </body>
 </html>

@@ -1,7 +1,7 @@
 body, html{
     margin: 0px;
     padding: 0px;
-    height: 180%;
+    height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,9 @@ body, html{
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('/images/hacker3.avif') no-repeat center center fixed;
     background-size: cover;
     color: white;
+    overflow-x: hidden;
 }
+
 
 .menu ul {
     list-style: none;
@@ -18,10 +20,7 @@ body, html{
     display: flex; 
 }
 
-.menu ul li a {
-    color: #0B2F9F;
-    text-decoration: none;
-}
+
 
 .menu ul li a.active {
     font-weight: bold;
@@ -31,7 +30,7 @@ header {
     color: #fff;
     padding: 0.1rem;
     text-align: center;
-    background-color: black; 
+    background-color: rgba(0, 0, 0, 0.595); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +42,6 @@ header>.interface {
     justify-content: space-between;
     font-size: 15px;
 }
-header a { 
-    color: #0B2F9F;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
 
 header nav.menu {
     display: flex;
@@ -56,7 +49,7 @@ header nav.menu {
 
 header nav.menu a {
     color: #fff;
-    font-size: 14.5px;
+    font-size: 15.5px;
     text-decoration: none;
     transition: 0.2s;
 }

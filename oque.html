@@ -91,6 +91,33 @@ h2{
     color: white;
     margin-left: 50px;
 }
+.pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 480px;
+        margin-left: -750px;
+        margin-bottom: 0 auto;
+    }
+
+    .pagination a {
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .pagination a:hover {
+        background-color: #1b99aa9a;
+        color: #FFFFFF;
+    }
+
+    .pagination a.active {
+        background-color: #1b99aa9a;
+        color: #000;
+    }
 
 </style>
 <body>
@@ -161,6 +188,16 @@ h2{
             <p>Os invasores mascararam seus números de telefone para se passar por contatos confiáveis, conseguindo assim obter acesso a comunicações privadas via o aplicativo Telegram. Esse caso gerou grande repercussão nacional, levantando questões sobre a segurança digital das comunicações governamentais e privadas no Brasil. Além disso, trouxe à tona discussões sobre os limites da privacidade, ética no uso de informações vazadas e o impacto do cibercrime no cenário político do país.</p>
             <p>Outro caso notável de spoofing ocorreu em 2020, quando o sistema da empresa de telefonia Oi foi alvo de um ataque de caller ID spoofing, resultando em tentativas de golpe financeiro. Os criminosos faziam ligações se passando por atendentes da operadora, solicitando informações bancárias e dados pessoais dos clientes. Esse incidente evidenciou a necessidade de reforçar a segurança em sistemas de telecomunicações.</p>
          </div>
+
+         <div class="pagination">
+            <a href="./pagina_inicial.html">&lt;</a>
+            <a href="./pagina_inicial.html" >1</a>
+            <a href="./oque.html" class="active">2</a>
+            <a href="./resultados.html">3</a>
+            <a href="./quemsomos.html">4</a>
+            <a href="./resultados.html">&gt;</a>
+        </div>
+
     </main>
 </body>
 </html>
